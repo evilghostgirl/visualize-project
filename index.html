@@ -1,77 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
-<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
-<link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-        <header class="navbar">
-                <section class="navbar-section">
-                  <a href="#" class="btn btn-link">Docs</a>
-                  <a href="#" class="btn btn-link">Examples</a>
-                </section>
-                <section class="navbar-center">
-                  <!-- centered logo or brand -->
-                </section>
-                <section class="navbar-section">
-                  <a href="#" class="btn btn-link">Twitter</a>
-                  <a href="#" class="btn btn-link">GitHub</a>
-                </section>
-              </header>
-    <div class="container">
-        <div class="columns">
-          <div class="column hero bg-gray col-12">
-              
-                <h1>H1 Heading</h1>
-                <p>Lorem ipsum dolor sit amet, ...</p>
-                <div class="input-group input-inline">
-                    
-                        <button class="btn btn-primary input-group-btn">Search</button>
-                      </div>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Visualize | Open Source App</title>
+</head>
+
+<body>
+  <div class="all-width"></div>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+           Visualize
+          </a>
+      
+        </div>
+      
+        
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-rounded">
+                  <strong>Pobierz</strong>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="column col-6">col-6</div>
-          <div class="column col-3">col-3</div>
-          <div class="column col-2">col-2</div>
-          <div class="column col-1">col-1</div>
-          <div class="column col-6"><div class="carousel">
-                <input class="carousel-locator" id="slide-1" type="radio" name="carousel-radio" hidden="" checked="">
-                <input class="carousel-locator" id="slide-2" type="radio" name="carousel-radio" hidden="">
-                <input class="carousel-locator" id="slide-3" type="radio" name="carousel-radio" hidden="">
-                <input class="carousel-locator" id="slide-4" type="radio" name="carousel-radio" hidden="">
-                <div class="carousel-container">
-                  <figure class="carousel-item">
-                    <label class="item-prev btn btn-action btn-lg" for="slide-4"><i class="icon icon-arrow-left"></i></label>
-                    <label class="item-next btn btn-action btn-lg" for="slide-2"><i class="icon icon-arrow-right"></i></label><img class="img-responsive rounded" src="https://picturepan2.github.io/spectre/img/osx-yosemite-2.jpg" alt="macOS Yosemite Wallpaper">
-                  </figure>
-                  <figure class="carousel-item">
-                    <label class="item-prev btn btn-action btn-lg" for="slide-1"><i class="icon icon-arrow-left"></i></label>
-                    <label class="item-next btn btn-action btn-lg" for="slide-3"><i class="icon icon-arrow-right"></i></label><img class="img-responsive rounded" src="https://picturepan2.github.io/spectre/img/osx-yosemite.jpg" alt="macOS Yosemite Wallpaper">
-                  </figure>
-                  <figure class="carousel-item">
-                    <label class="item-prev btn btn-action btn-lg" for="slide-2"><i class="icon icon-arrow-left"></i></label>
-                    <label class="item-next btn btn-action btn-lg" for="slide-4"><i class="icon icon-arrow-right"></i></label><img class="img-responsive rounded" src="https://picturepan2.github.io/spectre/img/osx-el-capitan-2.jpg" alt="macOS El Capitan Wallpaper">
-                  </figure>
-                  <figure class="carousel-item">
-                    <label class="item-prev btn btn-action btn-lg" for="slide-3"><i class="icon icon-arrow-left"></i></label>
-                    <label class="item-next btn btn-action btn-lg" for="slide-1"><i class="icon icon-arrow-right"></i></label><img class="img-responsive rounded" src="https://picturepan2.github.io/spectre/img/osx-el-capitan.jpg" alt="macOS El Capitan Wallpaper">
-                  </figure>
+        </div>
+      </nav>
+  <section class="hero has-background-light is-medium">
+    <div class="hero-body">
+      <div class="container ">
+        <div class="columns  is-vcentered">
+            <div class="column is-half"> <h1 class="title">
+                Prosta wizualizacja baz danych
+              </h1>
+              <h2 class="subtitle">
+                Z naszą aplikacją w szybki sposób przedstawisz graficznie swoje dane!
+              </h2>
+              <div class="field is-grouped">
+      <div class="control"><a class="button is-rounded is-pigeon ">Repozytorium</a></div>
+      <div class="control">    <a class="button is-link is-rounded">Prezentacja</a></div>
+                
+                
+            
+      
+              </div></div>
+              <div class="column is-half">
+                  <div class="container">
+                    <figure class="app-screen image is-16by9">
+            
+                      <img src="assets/screen3.jpg" alt="">
+                    </figure>
+                  </div>
                 </div>
-                <div class="carousel-nav">
-                  <label class="nav-item text-hide c-hand" for="slide-1">1</label>
-                  <label class="nav-item text-hide c-hand" for="slide-2">2</label>
-                  <label class="nav-item text-hide c-hand" for="slide-3">3</label>
-                  <label class="nav-item text-hide c-hand" for="slide-4">4</label>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+<div class="section">
+  <div class="container">
+      <div class="columns is-centered">
+          <div class="column has-text-centered is-two-thirds">
+            
+              <figure class="app-screen image is-16by9 ">
+                <img src="assets/screen1.jpg" alt="">
+              </figure>
+      
+      
+          
+          </div>
+      
+      
+         
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="columns">
+            <div class="column is-full">
+                <div class="container">
+                  <h2 class="is-size-2 has-text-centered	">Dlaczego stworzyliśmy Visualize?</h2>
+          
                 </div>
               </div>
+             
+          
         </div>
-      </div>
+
+  </div>
+</div>
+  
+<div class="section">
+  <div class="container">
+    <div class="columns">
+        <div class="column is-half-desktop is-half">
+            <div class="container">
+              <h2 class="is-size-3">Szkolny konkurs Programowania zespołowego</h2>
+              <br>
+              <p class="is-size-5">Jesteśmy ambitni. Z tego powodu, nasz czteroosobowy zespół skompletowany z uczniów klas 3k i 3t wziął udział
+                w konkursie. Każdy z nas posiada swoje indywidualne umiejętności techniczne, którymi się wyróżniał. Dało nam
+                to możliwość sprawdzenia się w pracy zespołowej. </p>
+            </div>
+          </div>
       
+      
+          <div class="column is-half">
+            <div class="container">
+              <figure class="app-screen image is-16by9">
+      
+                <img src="assets/screen2.jpg" alt="">
+              </figure>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+    <div class="columns has-text-centered">
+      <div class="column is-full">
+        <h1 class="is-size-2">Nasze sprinty</h1>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-4"><div class="card">
+          <header class="card-header">
+            <p class="card-header-title">
+              Zgłoszenie aplikacji do konkursu
+            </p>
+            <a href="#" class="card-header-icon" aria-label="more options">
+              <span class="icon">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </a>
+          </header>
+          <div class="card-content">
+            <div class="content">
+            Z dostępnych tematów wybraliśmy najciekawszy dla nas i zaplanowaliśmy wstępne technologie.
+            <a href="#">#wizualizacja danych</a>
+
+              <br>
+              <time datetime="2019-03-4">4 Marzec 2019</time>
+            </div>
+          </div>
+        </div></div>
+      <div class="column is-4"><div class="card">
+          <header class="card-header">
+            <p class="card-header-title">
+              Zaakceptowanie projektu
+            </p>
+            <a href="#" class="card-header-icon" aria-label="more options">
+              <span class="icon">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </a>
+          </header>
+          <div class="card-content">
+            <div class="content">
+             Komisja zaakceptowała nasz projekt. Rozpoczęliśmy przygotowania pełną parą.
+              <br>
+              <time datetime="2016-1-1">11:09 PM - 8 marzec 2016</time>
+            </div>
+          </div>
+
+        </div></div>
+      <div class="column is-4"><div class="card">
+          <header class="card-header">
+            <p class="card-header-title">
+              Zaprojektowanie makiety aplikacji
+            </p>
+            <a href="#" class="card-header-icon" aria-label="more options">
+              <span class="icon">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </a>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              Zaprojektowaliśmy UI Flow naszego projektu. Później wdrożyliśmy prosty frontend w SASSie i Spectre.css. Przemyśleliśmy nasze koncepty.
+              <a href="#">#sass</a><a href="#">#spectrecss</a> <a href="#">#frontend</a>
+              <br>
+              <time datetime="2016-1-1">10 marzec - 10 kwiecień 2019 </time>
+            </div>
+          </div>
+        </div></div>
+     
+    </div>
+    <div class="columns">
+        <div class="column is-4"><div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Zaprojektowaliśmy obsługę IndexedDB
+              </p>
+              <a href="#" class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </a>
+            </header>
+            <div class="card-content">
+              <div class="content">
+               Zakodowaliśmy api, które umożliwiało wykonywanie podstawowych operacji na nierelacyjnej bazie danych. Mieliśmy problemy z bazą Sqlite, przez co straciliśmy wiele czasu zanim zdecydowaliśmy się przejść na inną technologię.
+               <a href="#">#problemy</a> <a href="#">#sqlite</a> <a href="#">#indexeddb</a> 
+               <br>
+                <time datetime="2016-1-1">11 kwiecień - 20 maj 2019</time>
+              </div>
+            </div>
+          
+          </div></div>
+        <div class="column is-4"><div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Framework Vue.js
+              </p>
+              <a href="#" class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </a>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                  Stworzyliśmy wiele reużywalnych komponentów w Vue.js, dzięki czemu zyskaliśmy wiele czasu. Framework ten posiada wiele dodatkowych pluginów, np. użyliśmy vue-chartjs do wizualizacji naszych wykresów.
+
+                <a href="#">#vuejs</a> <a href="#">#chartjs</a> <a href="#">#zabawa</a>
+                <br>
+                <time datetime="2016-1-1">21 maj - 7 czerwiec 2019</time>
+              </div>
+            </div>
+           
+          </div></div>
+        <div class="column is-4"><div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Ostateczne zakończenie prac
+              </p>
+              <a href="#" class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </a>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                Budowa wieloplatformowej aplikacji w electron-builder, stworzenie prezentacji oraz strony internetowej. Oddanie pracy konkursowej jury.
+                <a href="#">#finał</a> <a href="#">#budowanie</a> <a href="#">#electron</a>
+                <br>
+                <time datetime="2016-1-1">10 czerwca 2019</time>
+              </div>
+            </div>
+          
+          </div></div>
+       
+      </div>
+  </div>
+</div>
+<div class="section has-background-light">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-12">
+              <div class="container  has-text-centered	">
+                  <h2 class="is-size-2">Sprawdź naszą aplikację! </h2>
+                  <h5 class="is-size-6">Stwórz świetną wizualizację w minutę</h5>
+                  <br>
+                  <a class="button is-pigeon is-rounded">Pobierz już teraz</a>
+              </div>
+            </div>
+        
+          </div>
+          
+  
+    </div>
+  </div>
+<div class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-half">
+          <div class="card">
+              <div class="card-image">
+                <figure class="image is-square">
+                  <img src="assets/insta.jpg" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="assets/ja.jpeg" alt="Placeholder image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Dzień w pracy developera</p>
+                    <p class="subtitle is-6">@evilghostgirl</p>
+                  </div>
+                </div>
+            
+                <div class="content">
+                
+                                
+                                <span class="tag is-black"> npm run dev</span>
+                                <span class="tag is-black">git commit -m 'wiadomosc'</span>
+<br>
+                  <a href="#">#npm</a> <a href="#">#terminal</a>
+                  <br>
+                  <time datetime="2016-1-1">19:43 - 10 maj 2019 </time>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="column is-half">
+          <div class="card">
+              <div class="card-image">
+                <figure class="image is-square">
+                  <img src="assets/ui-flow.jpg" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="assets/ja.jpeg" alt="Placeholder image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Nasze UI Flow</p>
+                    <p class="subtitle is-6">@evilghostgirl</p>
+                  </div>
+                </div>
+            
+                <div class="content">
+                Nie tylko dobry UX to podstawa sukcesu. Potrzeba też świetnie zaplanowaną architekturę informacji. <br>
+                  <a href="#">#UX</a> <a href="#">#UI</a>
+                  <br>
+                  <time datetime="2016-1-1">10:11 - 19 maj 2019</time>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer  has-background-light">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Visualize</strong> by <a href="https://jgthms.com">3k &amp; 3T </a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
 </body>
+
 </html>

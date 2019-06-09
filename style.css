@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-lightgray {
+  background: #F1F5F8;
+}
+
+.is-pigeon {
+  background: #2A5DFC;
+  color: white;
+}
+
+.columns.is-vcentered {
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+        align-items: center;
+}
+
+
+.all-width {
+  height: 7px;
+  width: 100%;
+  background: #2A5DFC;
+}
+.app-screen img {
+  border-radius: 10px;
+  box-shadow: 10px 10px 40px 0 rgba(177, 177, 177, 0.8);
+}
